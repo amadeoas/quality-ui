@@ -17,7 +17,7 @@ public class Person {
 	@Size(min=10, max=10)
 	private String date;
 
-	@Pattern(regexp="^[A-Z\s]{8,9}$")
+	@Pattern(regexp="^[A-Z\\s]{8,9}$")
 	@Size(min=8, max=9)
 	private String post;
 

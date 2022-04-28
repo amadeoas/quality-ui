@@ -21,3 +21,4 @@ webpack.generated.js
 .npmrc
 /.mvn/
 /.vscode/
+/build/
