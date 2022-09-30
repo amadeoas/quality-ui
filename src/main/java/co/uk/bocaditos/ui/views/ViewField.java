@@ -79,7 +79,7 @@ public interface ViewField {
 	}
 	
 	public static boolean notDefined(final String value) {
-		return (value == null || value.endsWith(DcmI18NProvider.NULL_SUFIX));
+		return (value == null || value.endsWith(Quality18NProvider.NULL_SUFIX));
 	}
 
 } // end class ViewField

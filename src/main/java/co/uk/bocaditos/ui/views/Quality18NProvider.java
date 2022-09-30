@@ -17,13 +17,13 @@ import org.slf4j.LoggerFactory;
 import com.vaadin.flow.i18n.I18NProvider;
 
 
-public class DcmI18NProvider implements I18NProvider {
+public class Quality18NProvider implements I18NProvider {
 	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1600139534192605171L;
-	private static final Logger logger = LoggerFactory.getLogger(DcmI18NProvider.class);
+	private static final Logger logger = LoggerFactory.getLogger(Quality18NProvider.class);
 
 	public static final String RESOURCE_BUNDLE_NAME = "messages";
 	public static final String NULL_SUFIX = " - null";
@@ -41,8 +41,8 @@ public class DcmI18NProvider implements I18NProvider {
 	}
 
 
-	public DcmI18NProvider() {
-		logger.info("{} was found", DcmI18NProvider.class.getSimpleName());
+	public Quality18NProvider() {
+		logger.info("{} was found", Quality18NProvider.class.getSimpleName());
 	}
 
 	@Override
@@ -68,4 +68,4 @@ public class DcmI18NProvider implements I18NProvider {
 	}
 
 	
-} // end class DcmI18NProvider
+} // end class QualityI18NProvider

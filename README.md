@@ -8,6 +8,10 @@ these APIs services.
 
 The connection with the said APIs have not be linked yet on this project.
 
+See below a view of the Home page, the staring page.
+
+<img src="docs/qualityUI.png" width="1000"/>
+
 ## Running the application
 
 The project is a standard Maven project. To run it from the command line,
@@ -55,13 +59,13 @@ Once the JAR file is built, you can run it using `java -jar target/quality-1.0-S
 To build the Dockerized version of the project, run
 
 ```
-docker build . -t dcmui:latest
+docker build . -t qualityui:latest
 ```
 
 Once the Docker image is correctly built, you can test it locally using
 
 ```
-docker run -p 8080:8080 dcmui:latest
+docker run -p 8080:8080 qualityui:latest
 ```
 
 
@@ -99,7 +103,7 @@ kubectl get services
 kubectl get deployments
 ```
 
-If the pods say `Container image "dcmui:latest" is not present with pull policy of Never` then you have not 
+If the pods say `Container image "qualityui:latest" is not present with pull policy of Never` then you have not 
 built your application using Docker or there is a mismatch in the name. Use `docker images ls` to see 
 which images are available.
 

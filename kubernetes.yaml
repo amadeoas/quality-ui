@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dcmui
+  name: qualityui
   namespace: default
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: dcmui
+      app: qualityui
   template:
     metadata:
       labels:
-        app: dcmui
+        app: qualityui
     spec:
       containers:
-        - name: dcmui
-          image: dcmui:latest
+        - name: qualityui
+          image: qualityui:latest
           imagePullPolicy: Never
           ports:
             - containerPort: 8080
@@ -28,10 +28,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: dcmui-balancer
+  name: qualityui-balancer
 spec:
   selector:
-    app: dcmui
+    app: qualityui
   ports:
     - protocol: TCP
       port: 8000 # The port to expose to the outside

@@ -7,7 +7,7 @@ import com.vaadin.flow.component.page.AppShellConfigurator;
 import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.theme.Theme;
 
-import co.uk.bocaditos.ui.views.DcmI18NProvider;
+import co.uk.bocaditos.ui.views.Quality18NProvider;
 
 import org.slf4j.bridge.SLF4JBridgeHandler;
 import org.springframework.boot.SpringApplication;
@@ -22,8 +22,8 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  * browsers.
  */
 @SpringBootApplication
-@Theme(value = "dcmui")
-@PWA(name = "DCM UI", shortName = "DCM UI", offlineResources = {"images/logo.png"})
+@Theme(value = "qualityui")
+@PWA(name = "Quality UI", shortName = "Quality UI", offlineResources = {"images/logo.png"})
 @NpmPackage(value = "line-awesome", version = "1.3.0")
 public class Application extends SpringBootServletInitializer implements AppShellConfigurator {
 
@@ -38,7 +38,7 @@ public class Application extends SpringBootServletInitializer implements AppShel
 
 
 	public static void main(final String[] args) {
-    	setProperty("vaadin.i18n.provider", DcmI18NProvider.class.getName());
+    	setProperty("vaadin.i18n.provider", Quality18NProvider.class.getName());
         SpringApplication.run(Application.class, args);
     }
 
